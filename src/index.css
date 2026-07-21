@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,500;1,9..144,600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  /* Warm editorial neutrals — replaces Tailwind's default slate scale
+     everywhere `slate-*` is used, so the whole app repaints from this. */
+  --color-slate-50: #fbf7f0;
+  --color-slate-100: #f5eee0;
+  --color-slate-200: #e9dcc5;
+  --color-slate-300: #d8c6a5;
+  --color-slate-400: #b9a480;
+  --color-slate-500: #9c8a6e;
+  --color-slate-600: #766555;
+  --color-slate-700: #574a3d;
+  --color-slate-800: #372e25;
+  --color-slate-900: #211b15;
+  --color-slate-950: #14100c;
+
+  /* Brand — deep indigo, used for primary actions/links. */
+  --color-brand-50: #eeecfa;
+  --color-brand-100: #dbd6f4;
+  --color-brand-200: #b7abe9;
+  --color-brand-300: #9481db;
+  --color-brand-400: #6f5bc4;
+  --color-brand-500: #4f3daa;
+  --color-brand-600: #392c8c;
+  --color-brand-700: #2c2170;
+  --color-brand-800: #201850;
+  --color-brand-900: #150f35;
+
+  /* Coral — warm accent for dates, prices, and highlights. */
+  --color-coral-50: #fdece7;
+  --color-coral-100: #fbd8ce;
+  --color-coral-200: #f5b29b;
+  --color-coral-300: #ee8a6b;
+  --color-coral-400: #ea714f;
+  --color-coral-500: #e85d4d;
+  --color-coral-600: #d6452f;
+  --color-coral-700: #b23724;
+  --color-coral-800: #8c2c1c;
+  --color-coral-900: #6b2116;
+
+  --font-display: 'Fraunces', 'Iowan Old Style', Georgia, serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-slate-50 text-slate-900 antialiased;
+  margin: 0;
+  background-image: radial-gradient(
+    circle at 1px 1px,
+    rgba(33, 27, 21, 0.06) 1px,
+    transparent 0
+  );
+  background-size: 22px 22px;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-display);
+}
